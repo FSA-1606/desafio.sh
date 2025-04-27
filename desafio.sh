@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# Script para criar estrutura de usuários, diretórios e permissões
-# Caminho da pasta Documentos
-DOCUMENTOS_DIR="/home/linserver/Documentos"
+# Defina o caminho da pasta Documentos
+DOCUMENTOS_DIR="/home/$USER/Documentos"
 
 echo "Apagando arquivos e diretórios dentro de $DOCUMENTOS_DIR..."
 
@@ -16,7 +15,6 @@ if [ -d "$DOCUMENTOS_DIR" ]; then
 else
     echo "Diretório $DOCUMENTOS_DIR não encontrado!"
 fi
-
 
 echo "Criando diretórios..."
 mkdir /publico
